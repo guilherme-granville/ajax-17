@@ -6,7 +6,7 @@
     <title>AJAX</title>
     <script>
         function LoadDoc() {
-            const xhttp = XMLHttpRequest();
+            const xhttp = new XMLHttpRequest();
             xhttp.onload = function(){
                 document.getElementById("demo").innerHTML = this.responseText;
             }
